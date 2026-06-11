@@ -4,8 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build --base=/portfolio-site--preview/",
+    "generate:content": "node scripts/generate-content.mjs",
+    "dev": "npm run generate:content && vite",
+    "build": "npm run generate:content && tsc --noEmit && vite build --base=/portfolio-site--preview/",
     "preview": "vite preview"
   },
   "dependencies": {

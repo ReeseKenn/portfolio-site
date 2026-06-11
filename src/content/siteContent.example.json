@@ -1,0 +1,248 @@
+{
+  "locales": {
+    "zh": {
+      "meta": {
+        "documentTitle": "个人作品集"
+      },
+      "nav": [
+        { "label": "概览", "targetId": "overview" },
+        { "label": "能力", "targetId": "skills" },
+        { "label": "项目", "targetId": "projects" },
+        { "label": "经历", "targetId": "experience" },
+        { "label": "简历", "targetId": "resume" },
+        { "label": "联系", "targetId": "contact" }
+      ],
+      "profile": {
+        "brand": "Portfolio",
+        "brandMark": "PF",
+        "eyebrow": "个人作品集",
+        "name": "你的名字",
+        "title": "前端开发工程师",
+        "summary": "这里填写你的个人简介、技术方向和代表性项目经验。",
+        "tags": ["React", "TypeScript", "Vite", "前端开发"],
+        "actions": {
+          "contact": "联系我",
+          "resume": "查看简历",
+          "github": "查看 GitHub"
+        },
+        "links": {
+          "email": "mailto:your-email@example.com",
+          "github": "https://github.com/your-github-username",
+          "resume": "#resume"
+        }
+      },
+      "stats": [
+        { "value": "3+", "label": "前端开发经验" },
+        { "value": "Web", "label": "业务系统与页面开发" },
+        { "value": "React", "label": "现代前端技术栈" },
+        { "value": "TS", "label": "类型化开发实践" }
+      ],
+      "preview": {
+        "title": "Candidate Snapshot",
+        "status": "Open to Work",
+        "metrics": [
+          { "label": "项目经验", "value": "Web" },
+          { "label": "技术栈", "value": "React" },
+          { "label": "工程能力", "value": "Vite" }
+        ],
+        "risks": [
+          { "label": "示例数据一", "level": "High", "tone": "high" },
+          { "label": "示例数据二", "level": "Mid", "tone": "mid" }
+        ]
+      },
+      "sections": {
+        "skills": {
+          "kicker": "Core Strengths",
+          "title": "核心能力",
+          "note": "用结构化模块展示你的岗位匹配能力。"
+        },
+        "projects": {
+          "kicker": "Featured Project",
+          "title": "代表项目",
+          "note": "展示一个最能说明能力的项目。"
+        },
+        "experience": {
+          "kicker": "Experience",
+          "title": "工作经历",
+          "note": "保持简洁，突出岗位相关经历。"
+        },
+        "resume": {
+          "kicker": "Resume",
+          "title": "简历摘要",
+          "note": "这里展示打包进静态页面的简历内容。"
+        }
+      },
+      "skills": [
+        { "icon": "FE", "title": "前端开发", "description": "负责页面、组件和业务功能开发。" },
+        { "icon": "TS", "title": "TypeScript", "description": "使用类型约束提升代码可维护性。" }
+      ],
+      "projects": [
+        {
+          "title": "示例项目",
+          "subtitle": "React / TypeScript / Vite",
+          "description": "这里填写项目背景和核心价值。",
+          "techStack": ["React", "TypeScript", "Vite"],
+          "highlights": ["项目亮点一", "项目亮点二"],
+          "githubUrl": "https://github.com/your-github-username",
+          "demoUrl": "",
+          "actions": {
+            "source": "查看源码",
+            "demo": "查看 Demo"
+          }
+        }
+      ],
+      "experience": [
+        {
+          "period": "2024 - 至今",
+          "company": "示例公司",
+          "role": "前端开发工程师",
+          "summary": "这里填写工作经历摘要。"
+        }
+      ],
+      "resume": {
+        "title": "简历内容",
+        "summary": "这里填写脱敏后的职业概述。",
+        "skills": ["技能一", "技能二"],
+        "projects": [
+          {
+            "title": "示例项目",
+            "stack": "React / TypeScript",
+            "highlights": ["项目成果一", "项目成果二"]
+          }
+        ],
+        "education": "学校 / 专业 / 学历"
+      },
+      "contact": {
+        "title": "欢迎联系",
+        "description": "如果你对我的经历或项目感兴趣，可以通过邮箱联系我。",
+        "actions": {
+          "email": "发邮件",
+          "resume": "查看简历"
+        }
+      },
+      "footer": "Portfolio site built with React and TypeScript."
+    },
+    "en": {
+      "meta": {
+        "documentTitle": "Portfolio"
+      },
+      "nav": [
+        { "label": "Overview", "targetId": "overview" },
+        { "label": "Skills", "targetId": "skills" },
+        { "label": "Projects", "targetId": "projects" },
+        { "label": "Experience", "targetId": "experience" },
+        { "label": "Resume", "targetId": "resume" },
+        { "label": "Contact", "targetId": "contact" }
+      ],
+      "profile": {
+        "brand": "Portfolio",
+        "brandMark": "PF",
+        "eyebrow": "Portfolio Site",
+        "name": "Your Name",
+        "title": "Frontend Engineer",
+        "summary": "Add your introduction, technical focus, and representative project experience here.",
+        "tags": ["React", "TypeScript", "Vite", "Frontend"],
+        "actions": {
+          "contact": "Contact Me",
+          "resume": "View Resume",
+          "github": "View GitHub"
+        },
+        "links": {
+          "email": "mailto:your-email@example.com",
+          "github": "https://github.com/your-github-username",
+          "resume": "#resume"
+        }
+      },
+      "stats": [
+        { "value": "3+", "label": "Frontend experience" },
+        { "value": "Web", "label": "Business applications" },
+        { "value": "React", "label": "Modern frontend stack" },
+        { "value": "TS", "label": "Typed development" }
+      ],
+      "preview": {
+        "title": "Candidate Snapshot",
+        "status": "Open to Work",
+        "metrics": [
+          { "label": "Projects", "value": "Web" },
+          { "label": "Stack", "value": "React" },
+          { "label": "Build", "value": "Vite" }
+        ],
+        "risks": [
+          { "label": "Sample item one", "level": "High", "tone": "high" },
+          { "label": "Sample item two", "level": "Mid", "tone": "mid" }
+        ]
+      },
+      "sections": {
+        "skills": {
+          "kicker": "Core Strengths",
+          "title": "Core Strengths",
+          "note": "A structured view of role-relevant capabilities."
+        },
+        "projects": {
+          "kicker": "Featured Project",
+          "title": "Featured Project",
+          "note": "A project that best demonstrates your abilities."
+        },
+        "experience": {
+          "kicker": "Experience",
+          "title": "Experience",
+          "note": "Concise and role-relevant work experience."
+        },
+        "resume": {
+          "kicker": "Resume",
+          "title": "Resume Summary",
+          "note": "Resume content bundled into the static site."
+        }
+      },
+      "skills": [
+        { "icon": "FE", "title": "Frontend Development", "description": "Build pages, components, and business features." },
+        { "icon": "TS", "title": "TypeScript", "description": "Use types to improve maintainability." }
+      ],
+      "projects": [
+        {
+          "title": "Sample Project",
+          "subtitle": "React / TypeScript / Vite",
+          "description": "Add project context and value here.",
+          "techStack": ["React", "TypeScript", "Vite"],
+          "highlights": ["Project highlight one", "Project highlight two"],
+          "githubUrl": "https://github.com/your-github-username",
+          "demoUrl": "",
+          "actions": {
+            "source": "View Source",
+            "demo": "View Demo"
+          }
+        }
+      ],
+      "experience": [
+        {
+          "period": "2024 - Present",
+          "company": "Sample Company",
+          "role": "Frontend Engineer",
+          "summary": "Add work experience summary here."
+        }
+      ],
+      "resume": {
+        "title": "Resume Content",
+        "summary": "Add a public resume summary here.",
+        "skills": ["Skill one", "Skill two"],
+        "projects": [
+          {
+            "title": "Sample Project",
+            "stack": "React / TypeScript",
+            "highlights": ["Project result one", "Project result two"]
+          }
+        ],
+        "education": "School / Major / Degree"
+      },
+      "contact": {
+        "title": "Get in Touch",
+        "description": "If you are interested in my experience or projects, feel free to contact me by email.",
+        "actions": {
+          "email": "Email Me",
+          "resume": "View Resume"
+        }
+      },
+      "footer": "Portfolio site built with React and TypeScript."
+    }
+  }
+}

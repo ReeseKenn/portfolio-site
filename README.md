@@ -49,6 +49,24 @@ npm run build
 npm run preview
 ```
 
+## 内容配置
+
+页面内容不直接写在组件代码中。
+
+- 示例内容：`src/content/siteContent.example.json`
+- 本地内容：`src/content/siteContent.local.json`
+- 生成内容：`src/content/siteContent.generated.ts`
+
+`siteContent.local.json` 和 `siteContent.generated.ts` 不提交到源码仓库。本地构建时，内容会被打包进静态页面。
+
+## 部署
+
+当前推荐本地构建后发布 `dist`：
+
+```bash
+./bin/deploy_to_github.sh
+```
+
 ## 联系方式
 
 - 邮箱：yanbaorui1997@163.com

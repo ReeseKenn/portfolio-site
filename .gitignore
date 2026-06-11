@@ -3,3 +3,5 @@ dist
 .DS_Store
 *.local
 *.tsbuildinfo
+src/content/siteContent.local.json
+src/content/siteContent.generated.ts

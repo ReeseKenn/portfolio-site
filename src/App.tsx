@@ -276,8 +276,8 @@ function ProjectsSection({ content }: { content: LocaleContent }) {
       {featuredProject ? <FeaturedProject project={featuredProject} preview={content.preview} /> : null}
       {otherProjects.length > 0 ? (
         <div className="project-list">
-          {otherProjects.map((project) => (
-            <CompactProject project={project} key={project.title} />
+          {otherProjects.map((project, index) => (
+            <CompactProject project={project} imageSide={index % 2 === 0 ? "right" : "left"} key={project.title} />
           ))}
         </div>
       ) : null}
@@ -319,20 +319,40 @@ function FeaturedProject({
   );
 }
 
-function CompactProject({ project }: { project: ProjectItem }) {
+function CompactProject({
+  project,
+  imageSide
+}: {
+  project: ProjectItem;
+  imageSide: "left" | "right";
+}) {
   return (
-    <article className="compact-project-card">
-      <div>
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
+    <article className={`compact-project-card ${project.imageUrl ? "has-image" : ""} image-${imageSide}`}>
+      <div className="compact-project-content">
+        <div>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+        </div>
+        <div className="tag-row compact">
+          {project.techStack.map((tech) => (
+            <span className="tag" key={tech}>
+              {tech}
+            </span>
+          ))}
+        </div>
+        <ProjectActions project={project} />
       </div>
-      <div className="tag-row compact">
-        {project.techStack.map((tech) => (
-          <span className="tag" key={tech}>
-            {tech}
-          </span>
-        ))}
-      </div>
+      {project.imageUrl ? (
+        <a
+          className="project-image-link"
+          href={project.imageUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`${project.title} screenshot`}
+        >
+          <img src={project.imageUrl} alt={`${project.title} screenshot`} />
+        </a>
+      ) : null}
     </article>
   );
 }

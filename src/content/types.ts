@@ -90,6 +90,7 @@ export interface ProjectItem {
   description: string;
   techStack: string[];
   highlights: string[];
+  imageUrl?: string;
   githubUrl?: string;
   demoUrl?: string;
   actions: {

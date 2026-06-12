@@ -529,7 +529,7 @@ h2 {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(420px, 1.1fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 1.1fr);
   gap: 0;
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -602,6 +602,36 @@ h2 {
 
 .compact-project-card {
   padding: 20px;
+}
+
+.compact-project-card.has-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 22px;
+  align-items: center;
+}
+
+.compact-project-card.image-left .project-image-link {
+  order: -1;
+}
+
+.compact-project-content {
+  min-width: 0;
+}
+
+.project-image-link {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.project-image-link img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .compact-project-card h3 {
@@ -825,6 +855,14 @@ h2 {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 18px;
+  }
+
+  .compact-project-card.has-image {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-project-card.image-left .project-image-link {
+    order: 0;
   }
 
   .contact-card {
